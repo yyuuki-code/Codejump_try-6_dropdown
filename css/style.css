@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  margin: 0 auto;
+  width: 230px;
+  height: 140px;
+  align-content: center;
+}
+header h1 {
+  font-size: 26px;
+}
+
+.menu {
+  background-color: #333;
+  color: white;
+}
+.menu .nav-flex {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  position: relative;
+  max-width: 1000px;
+}
+.menu .nav-content {
+  flex: 1;
+  height: 50px;
+  align-content: center;
+  text-align: center;
+  font-size: 12px;
+}
+@media (min-width: 600px) {
+  .menu .nav-content {
+    font-size: 14px;
+  }
+}
+
+.item-left1 {
+  position: relative;
+}
+
+.item-left1:hover .menusingle {
+  display: block;
+  color: white;
+  background-color: black;
+}
+
+.menusingle {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /* ← item (=ヘッド項目) と同じ幅になる */
+}
+.menusingle .single-link {
+  display: block;
+  padding: 18px 0;
+}
+.menusingle .single-link:hover {
+  color: gray;
+}
+
+.item-left2:hover .menuwide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 0;
+  color: white;
+  background-color: black;
+}
+.item-left2:hover .wide-link {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0px;
+}
+.item-left2:hover .wide-link:hover {
+  color: gray;
+}
+
+.menuwide {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* ← item (=ヘッド項目) と同じ幅になる */
+  width: 100%;
+}
+
+.item-right1 {
+  position: relative;
+}
+
+.item-right1:hover .menusingle {
+  display: block;
+  color: white;
+  background-color: black;
+}
+
+.item-right2:hover .menuwide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 0;
+  color: white;
+  background-color: black;
+}
+.item-right2:hover .wide-link {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0px;
+}
+/*# sourceMappingURL=style.css.map */
