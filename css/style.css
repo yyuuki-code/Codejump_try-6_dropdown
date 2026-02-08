@@ -121,4 +121,7 @@ header h1 {
   flex-direction: column;
   padding: 18px 0px;
 }
+.item-right2:hover .wide-link:hover {
+  color: gray;
+}
 /*# sourceMappingURL=style.css.map */

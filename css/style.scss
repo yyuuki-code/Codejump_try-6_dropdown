@@ -164,6 +164,10 @@ header {
     flex-direction: column;
     padding: 18px 0px;
   }
+  
+  .wide-link:hover {
+    color: gray
+  }
 }
 
 // menuwideは同じなので割愛
